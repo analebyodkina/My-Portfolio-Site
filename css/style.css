@@ -313,13 +313,18 @@ template {
   scroll-behavior: smooth; }
 
 html {
-  font-size: 1px; }
+  font-size: 1px;
+  height: 100%; }
 
 .wrapper {
   max-width: 1920rem;
   margin-inline: auto;
+  height: 100%;
   position: relative;
-  border: 5px solid red; }
+  border: 5px solid red;
+  display: grid;
+  grid-template-columns: 100rem 1fr;
+  gap: 40rem; }
 
 .container {
   max-width: 1200rem;
@@ -329,7 +334,8 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 10rem;
-  background: #eaeef6; }
+  background: #eaeef6;
+  height: 100%; }
 
 .overflow-y-hidden {
   overflow-y: hidden; }
