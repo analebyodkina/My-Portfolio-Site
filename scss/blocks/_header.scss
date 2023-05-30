@@ -1,5 +1,7 @@
 .header {
   @include flex-between;
+  border-bottom: 1rem solid $color-text;
+  padding: 32rem 0;
   &__ul {
     @include flex-between;
     gap: 40rem;
@@ -18,4 +20,6 @@
   &__logo {
   }
 }
+
+
 

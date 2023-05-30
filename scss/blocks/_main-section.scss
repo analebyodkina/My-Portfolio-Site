@@ -1,15 +1,17 @@
 
 .main-section {
-    &__container {
-        @include flex-between;        
-        gap: 50rem; 
-    }
-    
-    &__image {
+    &__container {        
+        text-align: center;
+        padding-top: 30rem;
+        
+        
+    }    
+    &__img {
         max-width: 500rem;
     }
     &__title {
-        @include text($ff-titles, 24rem, 28rem, 700, $color-text);
+        @include text($ff-titles, 16rem, 19rem, 400, $color-text);
+        letter-spacing: 0.1em;
         text-align: center;
         span {
             display: block;
@@ -17,6 +19,25 @@
             line-height: 60rem;
         }
     }
+    &__desc {
+        @include text($ff, 18rem, 22rem, 400, $color-text);
+
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: auto minmax(300rem, 500rem) auto;
+        gap: 30rem;
+    }
 
     
 }
+
+.left {
+    position: relative;
+    border: 1rem solid red;
+
+}
+.right {
+}
+
+
