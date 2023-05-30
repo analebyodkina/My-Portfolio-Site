@@ -10,14 +10,12 @@ html {
     max-width: 1920rem;
     margin-inline: auto;
     height: 100%;
-    position: relative;
-    border: 5px solid red;
-    display: grid;
-    grid-template-columns: 100rem 1fr;
-    gap: 40rem;
+    background: $main-bg;
+    color: #eaeef6;
+    
 }
 .container {
-    max-width: 1200rem;
+    max-width: 1440rem;
     padding: 0 15rem;
     margin-inline: auto;
 }
