@@ -10,8 +10,10 @@ html {
     max-width: 1920rem;
     margin-inline: auto;
     height: 100%;
-    background: $main-bg;
-    color: #eaeef6;
+    background: #131215;
+    color: $color-text;
+    
+    
     
 }
 .container {
@@ -21,9 +23,10 @@ html {
 }
 body {
     font-family: $ff;
-    font-size: 10rem;
-    background: #eaeef6;
+    font-size: 10rem;   
     height: 100%;
+    
+    margin: 0;
 }
 .overflow-y-hidden {
 	overflow-y: hidden;
@@ -79,4 +82,9 @@ button {
     height: 10px;
     width: 8rem;
     background-color: rgba($color-primary, $alpha: 0.9);    
+}
+
+@font-face {
+    font-family: GOSTAi;
+    src: url("https://cywarr.github.io/small-shop/GOSTtypeAitalic.ttf") format("truetype");
 }
