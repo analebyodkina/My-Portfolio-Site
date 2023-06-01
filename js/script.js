@@ -1,4 +1,7 @@
-
+// light theme
+function themeToggle() {
+	document.getElementById("html").classList.toggle("_light");
+}
 
 // carousel reflections section
 $('.owl-carousel').owlCarousel({    

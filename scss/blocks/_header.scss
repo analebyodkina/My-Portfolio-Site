@@ -67,7 +67,7 @@
     text-transform: uppercase;
     position: absolute;
     left: 50%; 
-    transform: translateX(-50%);   
+    transform: translateX(-65%);   
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
@@ -147,6 +147,7 @@
   width: 15px;
   height: 15px;
   position: relative;
+  bottom: 22%;
 }
 
 .top {

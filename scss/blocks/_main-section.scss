@@ -3,7 +3,7 @@
     &__container {        
         position: relative;        
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, minmax(400rem, 650rem));
         align-items: center;
         gap: 50rem;                     
         @include tablet-small-768 {
@@ -33,7 +33,7 @@
         @include text($ff, 18rem, 22rem, 400, $color-text);
     }
     &__img {
-        padding: 0;
+        
         img {            
         position: relative;
         top: 0; 

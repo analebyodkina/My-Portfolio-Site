@@ -1,0 +1,54 @@
+html._light  {	
+	body {
+		background: #d8e0c9;
+	}
+    .header {
+        border-bottom: 1rem solid $color-grey;
+        &__li a {
+            color: $color-grey;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+    .main-section__title, .main-section__desc {
+        color: $color-grey;
+    }
+    .about-section {
+        background: $color-primary;
+        &__title {
+            color: $color-text;
+        }
+    }
+    .edu {
+        &__item {
+        border: 2rem solid $color-grey;
+        }
+        &__header {
+            color: $color-text;
+        }
+        &__years {
+            color: $color-grey;
+        }
+    }    
+    .personal__img {
+        border: 3rem solid $color-text;
+    }
+    .desc {
+        color: $color-grey;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+	
+
+

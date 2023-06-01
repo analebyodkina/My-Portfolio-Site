@@ -1,5 +1,5 @@
 .about-section {
-    background: #151614;       
+    background: $bg-add;       
       
     &__container {
         display: grid;
@@ -75,7 +75,8 @@
 .personal {
     position: relative;
     &__row {
-        display: flex;       
+        display: flex; 
+        align-items: center;      
         gap: 70rem;
     }
     
@@ -84,13 +85,15 @@
     }
     &__img {
         position: absolute;
-        right: 20%;
+        right: 10%;
         top: 0;
         max-width: 150rem;
         // background-color: grey;
         border: 3rem solid $color-primary;
         border-radius: 8rem;
+        @include desktop-small-1200 {
+            position: static;
+        }
     }
-
 }
 
