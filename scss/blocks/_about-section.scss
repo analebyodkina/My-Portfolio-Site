@@ -1,5 +1,6 @@
 .about-section {
-    background: $color-primary;    
+    background: $color-primary;
+    padding: 80rem 0;    
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -8,17 +9,14 @@
     }
 
     &__title {
-        color: $color-grey;
-        margin-bottom: 30rem;
+        color: $color-text;
+        margin-bottom: 30rem
     }
     &__desc {
         max-width: 550rem;
-        font-size: 18rem;        
+        font-size: 18rem; 
+        line-height: 26rem;       
     }
-
-    &__education {
-    }
-
     &__skills {        
         ul li {
         margin-bottom: 21px;            
@@ -45,19 +43,32 @@
     &__personal {
     }
 }
-.container {
-}
-.title {
-}
-.edu {
+.edu {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
 
-    &__title {
+    &__title {        
+        align-self: flex-start;
+        margin-bottom: 15rem;
+
     }
 
     &__item {
+        padding: 25rem;
+        border: 2rem solid $color-grey;
+        width: 100%;
+        border-radius: 5rem;
+    }
+    &__header {
+        @include text($ff, 18rem, 24rem, 700, $color-text);
+        text-shadow: 2rem 1rem $color-grey;
     }
 
     &__years {
+        color: $color-grey;
+        margin-bottom: 10rem;
     }
 
     &__desc {
