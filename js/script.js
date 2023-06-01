@@ -17,22 +17,13 @@ $('.owl-carousel').owlCarousel({
       },
       // breakpoint from 992 up      
       992: {
-        items:2.5,        
+        items:3,        
       }
     }
 });
 
 
-// Force a hover to see the effect
-const share = document.querySelector('.share');
 
-setTimeout(() => {
-  share.classList.add("hover");
-}, 1000);
-
-setTimeout(() => {
-  share.classList.remove("hover");
-}, 3000);
 
 
 // light mode Button

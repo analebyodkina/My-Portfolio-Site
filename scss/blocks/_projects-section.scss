@@ -1,9 +1,10 @@
 .projects-section {
     padding: 80px 15px;
 	&__item {
+        max-width: 435rem;
         margin: 3rem;
-        padding: 24rem;
-        background: rgba($color-primary, $alpha: 0.6);
+        padding: 16rem;
+        background: rgba($color-primary, $alpha: 0.3);
         border-radius: 8rem;            
         display: flex;        
         flex-direction: column;        
