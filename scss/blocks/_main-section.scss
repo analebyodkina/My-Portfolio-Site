@@ -33,7 +33,6 @@
     }
     &__desc {
         @include text($ff, 18rem, 22rem, 400, $color-text);
-
     }
     &__img {           
         img {            
@@ -49,7 +48,13 @@
             }
         }        
     }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 24rem;
+    }
     &__btn {
+        @include press;
         display: inline-block;
         font-weight: 500;
         font-size: 16rem;
@@ -64,7 +69,7 @@
         perspective: 1200px;
         position: relative;
         max-width: 500rem;
-        // height: 100%;
+       
     }
     
     }
