@@ -1,0 +1,65 @@
+.about-section {
+    background: $color-primary;    
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40rem;
+        row-gap: 50rem;    
+    }
+
+    &__title {
+        color: $color-grey;
+        margin-bottom: 30rem;
+    }
+    &__desc {
+        max-width: 550rem;
+        font-size: 18rem;        
+    }
+
+    &__education {
+    }
+
+    &__skills {        
+        ul li {
+        margin-bottom: 21px;            
+        position: relative;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+    
+    &::before {
+        content: url('../img/icons/list-item.svg');
+        display: block;
+        transform: rotate(90deg);
+        width: 10px;
+        height: 12px; 
+        margin-right: 15px;
+        svg {
+            fill: $color-text;  
+        }
+    }
+        }
+    }
+
+    &__personal {
+    }
+}
+.container {
+}
+.title {
+}
+.edu {
+
+    &__title {
+    }
+
+    &__item {
+    }
+
+    &__years {
+    }
+
+    &__desc {
+    }
+}

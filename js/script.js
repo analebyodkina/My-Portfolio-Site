@@ -4,7 +4,7 @@
 $('.owl-carousel').owlCarousel({    
     lazyLoad:true,
     loop:true,
-    margin:24,
+    margin:18,
     autoHeight: true,
     nav: true,      
     responsive : {
@@ -16,7 +16,7 @@ $('.owl-carousel').owlCarousel({
           items:2,                 
       },
       // breakpoint from 992 up      
-      768 : {
+      992: {
         items:2.5,        
       }
     }
