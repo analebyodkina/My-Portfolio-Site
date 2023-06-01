@@ -17,10 +17,34 @@
 }
 .title {
 }
-.reflections-section {
+.title {
+}
+.projects-section {
 
-    &__list {
-    }
+		&__title {
+		}
+
+		&__list {
+		}
+
+		&__carousel {
+		}
+
+		&__item {
+            margin: 3rem;
+            padding: 32rem;
+            background: $card-bg;
+            border-radius: 8rem;            
+            display: flex;        
+            flex-direction: column;        
+            transition: $transition; 
+            &:hover {
+                box-shadow: 0rem 0rem 4rem $color-primary;           
+            }
+            img {
+                border-radius: 8rem;
+            }          
+		}
 }
 .owl-carousel {
 }

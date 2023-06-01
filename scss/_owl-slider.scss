@@ -1,12 +1,17 @@
 .owl-carousel {
     padding: 0 70rem;
+    height: 500px;
     @include tablet-992 {
         padding: 0;
     }
     .owl-stage-outer {
+        height: 500px;
         display: flex;
         border-radius: 0;
-        position: relative;          
+        position: relative;
+        .owl-height {
+            height: 500px;
+        }          
     }
 }
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {

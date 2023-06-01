@@ -363,9 +363,8 @@ button {
   font-size: 48rem;
   line-height: 56rem;
   font-weight: 700;
-  color: #f2f2f2;
-  margin-top: 111rem;
-  margin-bottom: 70px; }
+  color: #1f9783;
+  margin: 50rem; }
   @media (max-width: 768px) {
     .title {
       font-size: 35px;
@@ -565,16 +564,20 @@ button {
     text-decoration: underline;
     color: #fff; } }
 .owl-carousel {
-  padding: 0 70rem; }
+  padding: 0 70rem;
+  height: 500px; }
   @media (max-width: 992px) {
     .owl-carousel {
       padding: 0; } }
   .owl-carousel .owl-stage-outer {
+    height: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border-radius: 0;
     position: relative; }
+    .owl-carousel .owl-stage-outer .owl-height {
+      height: 500px; }
 
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   width: 36rem;
@@ -739,3 +742,23 @@ button {
 
 .projects-section {
   padding: 80px 15px; }
+
+.projects-section__item {
+  margin: 3rem;
+  padding: 32rem;
+  background: #0E1320;
+  border-radius: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out; }
+  .projects-section__item:hover {
+    -webkit-box-shadow: 0rem 0rem 4rem #1f9783;
+            box-shadow: 0rem 0rem 4rem #1f9783; }
+  .projects-section__item img {
+    border-radius: 8rem; }

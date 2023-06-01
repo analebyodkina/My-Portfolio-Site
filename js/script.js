@@ -17,7 +17,7 @@ $('.owl-carousel').owlCarousel({
       },
       // breakpoint from 992 up      
       768 : {
-        items:3,        
+        items:2.5,        
       }
     }
 });
