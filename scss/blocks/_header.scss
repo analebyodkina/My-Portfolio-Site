@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1rem solid $color-text;
+  border-bottom: 2rem solid $color-text;
   &__container {
     @include flex-between;    
     padding: 24rem 15rem;
