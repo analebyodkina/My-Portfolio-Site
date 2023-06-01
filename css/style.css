@@ -385,8 +385,7 @@ h3 {
   font-size: 16rem;
   line-height: 19rem;
   font-weight: 400;
-  color: #2c2b2b;
-  margin-bottom: 20rem; }
+  color: #2c2b2b; }
 
 *::-webkit-scrollbar {
   width: 10rem;
@@ -852,6 +851,26 @@ h3 {
   .edu__years {
     color: #2c2b2b;
     margin-bottom: 10rem; }
+
+.personal__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70rem; }
+.personal__title {
+  text-align: center; }
+.personal__desc {
+  max-width: 300rem; }
+.personal__img {
+  max-width: 150rem;
+  border: 3rem solid #f2f2f2;
+  border-radius: 8rem; }
 
 .projects-section {
   padding: 80px 15px; }

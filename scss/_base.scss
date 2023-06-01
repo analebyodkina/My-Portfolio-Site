@@ -63,7 +63,7 @@ h3 {
 }
 .desc {
     @include text($ff, 16rem, 19rem, 400, $color-grey);
-    margin-bottom: 20rem;
+    
 }
 // КАСТОМИЗИРОВАТЬ СКРОЛ
 *::-webkit-scrollbar {

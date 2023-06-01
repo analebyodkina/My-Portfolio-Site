@@ -3,11 +3,10 @@
     padding: 80rem 0;    
     &__container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);        
         column-gap: 40rem;
         row-gap: 50rem;    
     }
-
     &__title {
         color: $color-text;
         margin-bottom: 30rem
@@ -39,7 +38,6 @@
     }
         }
     }
-
     &__personal {
     }
 }
@@ -48,11 +46,9 @@
     flex-direction: column;
     align-items: center;
     gap: 20rem;
-
     &__title {        
         align-self: flex-start;
         margin-bottom: 15rem;
-
     }
 
     &__item {
@@ -65,12 +61,32 @@
         @include text($ff, 18rem, 24rem, 700, $color-text);
         text-shadow: 2rem 1rem $color-grey;
     }
-
     &__years {
         color: $color-grey;
         margin-bottom: 10rem;
     }
-
-    &__desc {
-    }
 }
+.personal {
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70rem;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__desc {
+        max-width: 300rem;
+    }
+    &__img {
+        max-width: 150rem;
+        // background-color: grey;
+        border: 3rem solid $color-text;
+        border-radius: 8rem;
+    }
+
+}
+.desc {
+}
+
