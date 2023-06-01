@@ -58,12 +58,14 @@ button {
     }
 }
 h3 {
-    @include text($ff-titles, 36rem, 36rem, 700, $color-grey);
+    @include text($ff, 32rem, 32rem, 700, $color-text);
     margin-bottom: 40rem;
 }
 .desc {
-    @include text($ff, 16rem, 19rem, 400, $color-grey);
-    
+    @include text($ff, 16rem, 19rem, 500, $color-grey);
+}
+section {
+    padding: 80rem 0;
 }
 // КАСТОМИЗИРОВАТЬ СКРОЛ
 *::-webkit-scrollbar {

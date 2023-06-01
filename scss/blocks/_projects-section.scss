@@ -2,14 +2,14 @@
     padding: 80px 15px;
 	&__item {
         margin: 3rem;
-        padding: 32rem;
-        background: $card-bg;
+        padding: 24rem;
+        background: rgba($color-primary, $alpha: 0.6);
         border-radius: 8rem;            
         display: flex;        
         flex-direction: column;        
         transition: $transition; 
         &:hover {
-            box-shadow: 0rem 0rem 4rem $color-primary;           
+            box-shadow: 0rem 0rem 10rem $color-white;           
         }
         img {
             border-radius: 8rem;

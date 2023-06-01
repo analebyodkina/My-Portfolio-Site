@@ -1,11 +1,14 @@
 .about-section {
-    background: $color-primary;
-    padding: 80rem 0;    
+    background: $color-primary;       
+      
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);        
-        column-gap: 40rem;
-        row-gap: 50rem;    
+        gap: 40rem;
+        @include tablet-small-768 {
+            grid-template-columns: 1fr; 
+            gap: 25rem; 
+        }
     }
     &__title {
         color: $color-text;
@@ -16,7 +19,8 @@
         font-size: 18rem; 
         line-height: 26rem;       
     }
-    &__skills {        
+    &__skills {
+        transform: translateY(-90rem);        
         ul li {
         margin-bottom: 21px;            
         position: relative;
@@ -68,14 +72,10 @@
 }
 .personal {
     &__row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex;       
         gap: 70rem;
     }
-    &__title {
-        text-align: center;
-    }
+    
     &__desc {
         max-width: 300rem;
     }
@@ -86,7 +86,5 @@
         border-radius: 8rem;
     }
 
-}
-.desc {
 }
 
