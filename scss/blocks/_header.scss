@@ -3,13 +3,15 @@
   &__container {
     @include flex-between;    
     padding: 24rem 15rem;
-
+    position: relative;
   }
   &__logo {
     position: relative;
-  } 
+  }   
   &__ul {
-    @include flex-between;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 40rem;
     a {
       @include text($ff, 16rem, 19rem, 400, $color-text);
@@ -31,17 +33,23 @@
       }
       &:hover:after, &:focus:after {
         width: 100%;
-      }
+      }      
     }
   }
+ 
   &__close {
     display: none;
   }
   &__burger {
     display: none;
-		@include tablet-992 {
+		@include tablet-small-768 {
 			display: inline-block;
 		}
+  }
+  &__hire {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   }
 }
 .contact {  

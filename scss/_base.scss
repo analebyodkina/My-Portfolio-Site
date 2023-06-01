@@ -5,6 +5,9 @@
 html {
     font-size: 1px;
     height: 100%;
+    @include tablet-992 {
+        font-size: 0.7px;
+    }
 }
 .wrapper {
     max-width: 1920rem;
@@ -16,6 +19,9 @@ html {
     max-width: 1440rem;
     padding: 0 15rem;
     margin-inline: auto;
+    @include tablet-992 {
+        padding: 0 24rem;
+    }
 }
 body {
     font-family: $ff;
@@ -48,24 +54,25 @@ button {
     padding: 0;
   }
 .title {
-    @include text($ff, 48rem, 56rem, 700, $color-primary);
+    @include text($ff, 50rem, 56rem, 700, $color-primary);
     margin-bottom: 50rem;
-    @include tablet-small-768{
-        font-size: 35px;
-        line-height: 45px;
-        margin-top: 70px;
-        margin-bottom: 40px;
+    @include tablet-992{        
+        margin-bottom: 35rem;
     }
 }
 h3 {
     @include text($ff, 32rem, 32rem, 700, $color-text);
-    margin-bottom: 40rem;
+    margin-bottom: 30rem;
+    
 }
 .desc {
     @include text($ff, 16rem, 19rem, 500, $color-grey);
 }
 section {
     padding: 80rem 0;
+    @include tablet-992 {
+        padding: 40rem 0;
+    }
 }
 // КАСТОМИЗИРОВАТЬ СКРОЛ
 *::-webkit-scrollbar {

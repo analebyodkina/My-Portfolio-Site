@@ -1,22 +1,5 @@
 
-
-
-// <nav class="nav header__nav">
-//                     <ul class="header__ul" id="headerUl">
-//                         <li class="header__li"><a href="#" class="header__a _active">Home</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Service</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Doctors</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Gallery</a></li>
-//                         <li class="header__li"><a href="#" class="header__a">Contact</a></li>
-//                         <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span>
-//                     </ul>
-//                 </nav>
-//                 <div class="header__burger">
-//                     <span class="material-symbols-outlined" onclick="navToggle()">menu</span>
-//                 </div>
-
-
-@include tablet-992 {
+@include tablet-small-768 {
     .header__ul {
         position: fixed;
         width: 100%;

@@ -5,13 +5,9 @@
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;
-        gap: 50rem;
-                     
+        gap: 50rem;                     
         @include tablet-small-768 {
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-            text-align: center; 
-            gap: 15px;           
+            grid-template-columns: 1fr;         
         }
     }
     &__info {
@@ -36,16 +32,17 @@
     &__desc {
         @include text($ff, 18rem, 22rem, 400, $color-text);
     }
-    &__img {           
+    &__img {
+        padding: 0;
         img {            
-        position: relative; 
+        position: relative;
+        top: 0; 
         transform: scale(0.7);
         z-index: 10;
         border-radius: 8rem;
         background-clip: padding-box; 
         border: solid 5px $color-primary;            
-        // max-width: 400rem;
-        // max-height: 500rem;           
+                
             
         }        
     }

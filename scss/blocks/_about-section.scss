@@ -5,14 +5,16 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);        
         gap: 40rem;
-        @include tablet-small-768 {
+        @include tablet-992 {
             grid-template-columns: 1fr; 
             gap: 25rem; 
+            justify-items: center;
         }
     }
     &__title {
         color: $color-text;
-        margin-bottom: 30rem
+        margin-bottom: 30rem;
+        text-shadow: 2rem 1rem $color-grey;
     }
     &__desc {
         max-width: 550rem;
@@ -20,7 +22,10 @@
         line-height: 26rem;       
     }
     &__skills {
-        transform: translateY(-90rem);        
+        transform: translateY(-90rem); 
+        @include tablet-992 {
+            transform: translateY(0rem);
+        }       
         ul li {
         margin-bottom: 21px;            
         position: relative;
@@ -28,6 +33,7 @@
         align-items: center;
         display: flex;
         align-items: center;
+        
     
     &::before {
         content: url('../img/icons/list-item.svg');
@@ -46,10 +52,9 @@
     }
 }
 .edu {    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20rem;
+    display: grid;
+    grid-template-rows: auto 1fr;    
+    gap: 20rem;    
     &__title {        
         align-self: flex-start;
         margin-bottom: 15rem;
@@ -63,7 +68,7 @@
     }
     &__header {
         @include text($ff, 18rem, 24rem, 700, $color-text);
-        text-shadow: 2rem 1rem $color-grey;
+        // text-shadow: 2rem 1rem $color-grey;
     }
     &__years {
         color: $color-grey;
