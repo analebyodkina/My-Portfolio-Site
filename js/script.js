@@ -47,7 +47,7 @@ function onBtnUp() {
   let size = "100px";
 
   if (isChecked) {
-    x = 60;
+    x = 38;
     backgroundColor = "#FFFFFF";
     size = "100px";
   }
