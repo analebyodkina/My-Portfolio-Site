@@ -434,22 +434,17 @@ button {
         display: inline-block; } }
 
 .share {
-  width: 300px;
-  left: 0;
-  top: 0;
+  width: 200px;
   border-radius: 8rem; }
   .share a {
-    color: #f1ce64; }
+    color: #f2f2f2; }
   .share span {
-    width: 150px;
-    line-height: 40px;
+    line-height: 30px;
     display: inline-block;
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    left: 43%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: 18%;
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
@@ -457,8 +452,8 @@ button {
   .share nav {
     font-size: 0; }
   .share a {
-    line-height: 40px;
-    width: 40px;
+    line-height: 30px;
+    width: 30px;
     text-align: center;
     display: inline-block;
     background-color: #1f9783;
@@ -474,26 +469,28 @@ button {
       border-bottom-left-radius: 8rem;
       margin-left: 0; }
       .share a:nth-child(1):hover {
-        background-color: #61c5ec; }
+        background-color: #0e76a8; }
     .share a:nth-child(2):hover {
       background-color: #3B5998; }
     .share a:nth-child(3):hover {
-      background-color: #ea4335; }
+      background: -webkit-gradient(linear, left top, right top, from(#7935d2), color-stop(26%, #f640da), to(#eec736));
+      background: linear-gradient(90deg, #7935d2 0%, #f640da 26%, #eec736 100%); }
     .share a:nth-child(4) {
       border-top-right-radius: 8rem;
       border-bottom-right-radius: 8rem;
       margin-right: 0; }
       .share a:nth-child(4):hover {
-        background-color: #000000; }
+        background-color: #000000;
+        outline: 0.5rem solid #f2f2f2; }
   .share:hover span, .share.hover span {
     opacity: 0; }
   .share:hover a, .share.hover a {
     border-radius: 50%;
     margin: 0 10px;
-    color: #f1ce64;
+    color: #f2f2f2;
     font-size: 16px; }
     .share:hover a:hover, .share.hover a:hover {
-      color: #fff; }
+      color: #f2f2f2; }
 
 @media (max-width: 992px) {
   .header__ul {
