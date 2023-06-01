@@ -458,17 +458,20 @@ button {
         display: inline-block; } }
 
 .contact {
-  width: 200px;
+  width: 250rem;
   border-radius: 8rem; }
   .contact a {
     color: #f2f2f2; }
   .contact span {
-    line-height: 30px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16rem;
+    line-height: 35rem;
+    font-weight: 400;
+    color: #f2f2f2;
     display: inline-block;
-    font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    left: 18%;
+    left: 13%;
     opacity: 1;
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
@@ -476,8 +479,8 @@ button {
   .contact__nav {
     font-size: 0; }
   .contact a {
-    line-height: 30px;
-    width: 30px;
+    line-height: 35rem;
+    width: 35rem;
     text-align: center;
     display: inline-block;
     background-color: #1f9783;
@@ -486,8 +489,8 @@ button {
     opacity: 1;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1); }
+    -webkit-box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1);
+            box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1); }
     .contact a:nth-child(1) {
       border-top-left-radius: 8rem;
       border-bottom-left-radius: 8rem;
@@ -510,9 +513,9 @@ button {
     opacity: 0; }
   .contact:hover a, .contact.hover a {
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 10rem;
     color: #f2f2f2;
-    font-size: 16px; }
+    font-size: 16rem; }
     .contact:hover a:hover, .contact.hover a:hover {
       color: #f2f2f2; }
 
