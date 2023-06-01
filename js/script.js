@@ -33,3 +33,30 @@ setTimeout(() => {
 setTimeout(() => {
   share.classList.remove("hover");
 }, 3000);
+
+
+// light mode Button
+
+let isChecked = false;
+
+function onBtnUp() {
+  isChecked = !isChecked;
+
+  let x = 0;
+  let backgroundColor = "#827D96";
+  let size = "100px";
+
+  if (isChecked) {
+    x = 60;
+    backgroundColor = "#FFFFFF";
+    size = "100px";
+  }
+
+  let tl = gsap.timeline();
+  tl.to(".knob", { x, duration: 1 }, "up");
+  tl.to(".top", { backgroundColor, duration: 1 }, "up");
+  tl.to(".light", { width: size, height: size, duration: 1 }, "up");
+}
+
+const btn = document.getElementById("btn");
+btn.addEventListener("mouseup", onBtnUp);
