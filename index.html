@@ -37,10 +37,10 @@
 				</div>	
 				<nav class="header__nav">									
 					<ul class="header__ul" id="headerUl">	
-						<li><a href="https://t.me/a_lebjodkina" id="background" target="_blank">Hire me</a></li>					
-						<li class="header__li"><a href="#">Home</a></li>
-						<li class="header__li"><a href="#about">About</a></li>
-						<li class="header__li"><a href="#projects">Projects</a></li>						
+						<li><a href="https://t.me/a_lebjodkina" id="background" target="_blank" onclick="navToggle()">Hire me</a></li>					
+						<li class="header__li"><a href="#home" onclick="navToggle()">Home</a></li>
+						<li class="header__li"><a href="#about" onclick="navToggle()">About</a></li>
+						<li class="header__li"><a href="#projects" onclick="navToggle()">Projects</a></li>						
 						<li><span class="material-symbols-outlined header__close" id="close" onclick="navToggle()">close</span></li>
 					</ul>
 				</nav>
@@ -51,9 +51,9 @@
 			</div>
 		</header>
 		<section class="main-section">
-			<div class=" container main-section__container">					
+			<div class=" container main-section__container" id="home">					
 				<div class="main-section__info">
-					<h1 class="main-section__title">Hi! I'm<span>Anastasiia Lebjodkina</span></h1>
+					<h1 class="main-section__title" >Hi! I'm<span>Anastasiia Lebjodkina</span></h1>
 					<div class="main-section__desc">
 						Front-End developer based in Ukraine
 					</div>	
@@ -150,7 +150,7 @@
 					</div>
 					<ul class="footer__ul">	
 						<li><a href="https://t.me/a_lebjodkina" target="_blank">Hire me</a></li>					
-						<li><a href="#">Home</a></li>
+						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#projects">Projects</a></li>						
 						
@@ -162,15 +162,9 @@
 
 			</div>
 			
-		</footer>	
-
-		
-				
-		
+		</footer>
 				
 	</div>
-			
-	
 
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

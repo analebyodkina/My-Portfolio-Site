@@ -7,6 +7,8 @@ function themeToggle() {
 function navToggle() {
   var headerUl = document.getElementById("headerUl");
   headerUl.classList.toggle("active");
+  document.getElementById("html").classList.toggle("overflow-hidden");
+  document.getElementById("body").classList.toggle("overflow-hidden");
 }
 
 // copyright
