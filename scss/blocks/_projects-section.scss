@@ -1,5 +1,7 @@
 .projects-section {
-    padding: 80px 15px;
+    @include tablet-992 {
+        padding: 40rem 24rem;
+    }
 	&__item {
         max-width: 435rem;
         margin: 3rem;

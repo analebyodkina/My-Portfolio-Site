@@ -3,6 +3,12 @@ function themeToggle() {
 	document.getElementById("html").classList.toggle("_light");
 }
 
+// open menu from burger
+function navToggle() {
+  var headerUl = document.getElementById("headerUl");
+  headerUl.classList.toggle("active");
+}
+
 // carousel reflections section
 $('.owl-carousel').owlCarousel({    
     lazyLoad:true,
@@ -26,10 +32,7 @@ $('.owl-carousel').owlCarousel({
 });
 
 
-
-
-
-// light mode Button
+// light theme Button
 
 let isChecked = false;
 

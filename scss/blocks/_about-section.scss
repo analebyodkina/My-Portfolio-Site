@@ -4,7 +4,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);        
         gap: 40rem;
-        @include tablet-992 {
+        @include mobile-576 {
             grid-template-columns: 1fr; 
             gap: 25rem; 
             justify-items: center;
