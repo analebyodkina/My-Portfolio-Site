@@ -1,11 +1,12 @@
 .footer {
-    padding: 20rem 0;
+    padding: 20rem 0 30rem 0;
     background: $bg-add;
     &__container {
         @include flex-between;
     }
 
     &__copyright {
+        @include text($ff, 14rem, 16rem, 400, rgba(255,255,255,0.5));
     }
 
     &__nav {
@@ -15,18 +16,19 @@
     &__contact {
         margin-bottom: 10rem;
         span {
-            right:-10%;
-            // transform: translateX(-50%);
+            right:-10%; 
+            @include tablet-992 {
+                right:-45%;  
+            }           
         }
     }
-
     &__ul {
         display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 40rem;
+    
+    gap: 20rem;
         a {
-            @include text($ff, 16rem, 19rem, 400, $color-text);
+            @include text($ff, 14rem, 16rem, 400, $color-text);
             transition: $transition;
             &:hover {
               color: $color-primary;

@@ -331,7 +331,7 @@ html {
   margin-inline: auto; }
   @media (max-width: 992px) {
     .container {
-      padding: 0 24rem; } }
+      padding: 0 35rem; } }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -516,8 +516,7 @@ section {
 .owl-theme .owl-dots .owl-dot {
   width: 16rem;
   height: 16rem;
-  margin-right: 8rem;
-  margin-top: 20rem; }
+  margin: 20rem 8rem 0 0; }
   .owl-theme .owl-dots .owl-dot span {
     background: rgba(31, 151, 131, 0.3); }
   .owl-theme .owl-dots .owl-dot.active span {
@@ -960,9 +959,15 @@ html._light .desc {
         margin-right: 15px; }
 
 .edu {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 20rem; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20rem;
+  width: 100%; }
   .edu__title {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -970,7 +975,6 @@ html._light .desc {
   .edu__item {
     padding: 25rem;
     border: 2rem solid #1f9783;
-    width: 100%;
     border-radius: 5rem; }
   .edu__header {
     font-family: "Rubik", sans-serif;
@@ -1005,10 +1009,10 @@ html._light .desc {
         position: static; } }
 
 .projects-section {
-  padding: 80rem 15rem; }
+  padding: 80rem 15rem 120rem 15rem; }
   @media (max-width: 992px) {
     .projects-section {
-      padding: 40rem 24rem; } }
+      padding: 40rem 35rem 80rem 35rem; } }
   .projects-section__item {
     max-width: 435rem;
     margin: 3rem;
@@ -1031,7 +1035,7 @@ html._light .desc {
       border-radius: 8rem; }
 
 .footer {
-  padding: 20rem 0;
+  padding: 20rem 0 30rem 0;
   background: #313231; }
   .footer__container {
     display: -webkit-box;
@@ -1043,12 +1047,21 @@ html._light .desc {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .footer__copyright {
+    font-family: "Rubik", sans-serif;
+    font-size: 14rem;
+    line-height: 16rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5); }
   .footer__nav {
     position: relative; }
   .footer__contact {
     margin-bottom: 10rem; }
     .footer__contact span {
       right: -10%; }
+      @media (max-width: 992px) {
+        .footer__contact span {
+          right: -45%; } }
   .footer__ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1056,14 +1069,11 @@ html._light .desc {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    gap: 40rem; }
+    gap: 20rem; }
     .footer__ul a {
       font-family: "Rubik", sans-serif;
-      font-size: 16rem;
-      line-height: 19rem;
+      font-size: 14rem;
+      line-height: 16rem;
       font-weight: 400;
       color: #f2f2f2;
       -webkit-transition: 0.2s all ease-in-out;

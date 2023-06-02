@@ -9,6 +9,10 @@ function navToggle() {
   headerUl.classList.toggle("active");
 }
 
+// copyright
+var currentYear = new Date().getFullYear();
+document.getElementById("footer-year").innerHTML = currentYear;
+
 // carousel reflections section
 $('.owl-carousel').owlCarousel({    
     lazyLoad:true,
