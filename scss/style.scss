@@ -2,14 +2,18 @@
 @import 'vars';
 @import 'mixins';
 @import 'base';
+
+@import 'utils/burger';
+@import 'utils/owl-slider';
+@import 'utils/light-theme';
+@import 'utils/socialsBtn';
+@import 'utils/changeThemeBtn';
+
+
 @import 'blocks/header';
-@import 'burger';
-@import 'owl-slider';
-@import 'light-theme';
 @import 'blocks/main-section';
 @import 'blocks/about-section';
 @import 'blocks/projects-section';
-
 
 
 @import 'blocks/footer';

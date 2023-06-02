@@ -50,9 +50,17 @@
 		}
   }
   &__hire {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    a {
+      
+      @include text($ff, 50rem, 56rem, 700, $color-primary);
+      background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+    }
+  
   }
 }
 .contact {  
@@ -125,73 +133,52 @@
     }
   }
 }
-.btnContainer {
-  width: 70px;
-  height: 30px;
-  position: relative;
+
+
+
+
+.shine, .chrome {
+	font-size: 3em;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+.shine {
+	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	-webkit-background-size: 150px;
+	color: $text-color;
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
 
-.btnL {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: #3c3459;
-  border-radius: 999px;
-  padding: 10px;
-  cursor: pointer;
+.chrome {
+	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+	-webkit-background-size: 200px;
+	color: $text-color;
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
 }
 
-.knob {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  bottom: 22%;
-}
-
-.top {
-  background-color: #827d96;
-  border-radius: 999px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.light {
-  border-radius: 999px;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #4cc3e2 10.42%,
-    rgba(94, 199, 227, 0.791579) 27.08%,
-    rgba(113, 204, 229, 0.35) 45.31%,
-    rgba(144, 213, 231, 0.11) 65.1%,
-    rgba(158, 216, 231, 0.02) 78.12%,
-    rgba(177, 221, 233, 0) 95.83%
-  );
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.no-highlight {
-  /* bad for accessibility - please don't use this in real world applications */
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+@-webkit-keyframes shine {
+	0%, 10% {
+		background-position: -1000px;
+	}
+	20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	}
+	100% {
+		background-position: 1000px;
+	}
 }
 
 

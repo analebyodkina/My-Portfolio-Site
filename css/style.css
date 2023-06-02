@@ -406,194 +406,6 @@ section {
   width: 8rem;
   background-color: rgba(31, 151, 131, 0.9); }
 
-.header {
-  border-bottom: 2rem solid #f2f2f2; }
-  .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 24rem 15rem;
-    position: relative; }
-  .header__left {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20rem; }
-  .header__ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    gap: 40rem; }
-    .header__ul a {
-      font-family: "Rubik", sans-serif;
-      font-size: 16rem;
-      line-height: 19rem;
-      font-weight: 400;
-      color: #f2f2f2;
-      -webkit-transition: 0.2s all ease-in-out;
-      transition: 0.2s all ease-in-out; }
-      .header__ul a:hover {
-        color: #1f9783; }
-      .header__ul a:after {
-        content: "";
-        background-color: #1f9783;
-        display: block;
-        height: 2px;
-        width: 0%;
-        position: relative;
-        top: 2px;
-        -webkit-transition: width .3s ease-in-out;
-        -moz--transition: width .3s ease-in-out;
-        transition: width .3s ease-in-out; }
-      .header__ul a:hover:after, .header__ul a:focus:after {
-        width: 100%; }
-  .header__close {
-    display: none; }
-  .header__burger {
-    display: none; }
-    @media (max-width: 768px) {
-      .header__burger {
-        display: inline-block; } }
-  .header__hire {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-
-.contact {
-  width: 250rem;
-  border-radius: 8rem; }
-  .contact a {
-    color: #f2f2f2; }
-  .contact span {
-    font-family: "Rubik", sans-serif;
-    font-size: 16rem;
-    line-height: 35rem;
-    font-weight: 400;
-    color: #f2f2f2;
-    display: inline-block;
-    text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-65%);
-            transform: translateX(-65%);
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none; }
-  .contact__nav {
-    font-size: 0; }
-  .contact a {
-    line-height: 35rem;
-    width: 35rem;
-    text-align: center;
-    display: inline-block;
-    background-color: #1f9783;
-    color: #1f9783;
-    overflow: hidden;
-    opacity: 1;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1);
-            box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1); }
-    .contact a:nth-child(1) {
-      border-top-left-radius: 8rem;
-      border-bottom-left-radius: 8rem;
-      margin-left: 0; }
-      .contact a:nth-child(1):hover {
-        background-color: #0e76a8; }
-    .contact a:nth-child(2):hover {
-      background-color: #3B5998; }
-    .contact a:nth-child(3):hover {
-      background: -webkit-gradient(linear, left top, right top, from(#7935d2), color-stop(26%, #f640da), to(#eec736));
-      background: linear-gradient(90deg, #7935d2 0%, #f640da 26%, #eec736 100%); }
-    .contact a:nth-child(4) {
-      border-top-right-radius: 8rem;
-      border-bottom-right-radius: 8rem;
-      margin-right: 0; }
-      .contact a:nth-child(4):hover {
-        background-color: #000000;
-        outline: 0.5rem solid #f2f2f2; }
-  .contact:hover span, .contact.hover span {
-    opacity: 0; }
-  .contact:hover a, .contact.hover a {
-    border-radius: 50%;
-    margin: 0 10rem;
-    color: #f2f2f2;
-    font-size: 16rem; }
-    .contact:hover a:hover, .contact.hover a:hover {
-      color: #f2f2f2; }
-
-.btnContainer {
-  width: 70px;
-  height: 30px;
-  position: relative; }
-
-.btnL {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: #3c3459;
-  border-radius: 999px;
-  padding: 10px;
-  cursor: pointer; }
-
-.knob {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  bottom: 22%; }
-
-.top {
-  background-color: #827d96;
-  border-radius: 999px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; }
-
-.light {
-  border-radius: 999px;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(50% 50% at 50% 50%, #4cc3e2 10.42%, rgba(94, 199, 227, 0.791579) 27.08%, rgba(113, 204, 229, 0.35) 45.31%, rgba(144, 213, 231, 0.11) 65.1%, rgba(158, 216, 231, 0.02) 78.12%, rgba(177, 221, 233, 0) 95.83%);
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.hidden {
-  visibility: hidden; }
-
-.no-highlight {
-  /* bad for accessibility - please don't use this in real world applications */
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
 @media (max-width: 768px) {
   .header__ul {
     position: fixed;
@@ -745,6 +557,227 @@ html._light .personal__img {
 html._light .desc {
   color: #1b1a1a; }
 
+.btnContainer {
+  width: 70px;
+  height: 30px;
+  position: relative; }
+
+.btnL {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #3c3459;
+  border-radius: 999px;
+  padding: 10px;
+  cursor: pointer; }
+
+.knob {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  bottom: 22%; }
+
+.top {
+  background-color: #827d96;
+  border-radius: 999px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.light {
+  border-radius: 999px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #4cc3e2 10.42%, rgba(94, 199, 227, 0.791579) 27.08%, rgba(113, 204, 229, 0.35) 45.31%, rgba(144, 213, 231, 0.11) 65.1%, rgba(158, 216, 231, 0.02) 78.12%, rgba(177, 221, 233, 0) 95.83%);
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.hidden {
+  visibility: hidden; }
+
+.header {
+  border-bottom: 2rem solid #f2f2f2; }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 24rem 15rem;
+    position: relative; }
+  .header__left {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20rem; }
+  .header__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 40rem; }
+    .header__ul a {
+      font-family: "Rubik", sans-serif;
+      font-size: 16rem;
+      line-height: 19rem;
+      font-weight: 400;
+      color: #f2f2f2;
+      -webkit-transition: 0.2s all ease-in-out;
+      transition: 0.2s all ease-in-out; }
+      .header__ul a:hover {
+        color: #1f9783; }
+      .header__ul a:after {
+        content: "";
+        background-color: #1f9783;
+        display: block;
+        height: 2px;
+        width: 0%;
+        position: relative;
+        top: 2px;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out; }
+      .header__ul a:hover:after, .header__ul a:focus:after {
+        width: 100%; }
+  .header__close {
+    display: none; }
+  .header__burger {
+    display: none; }
+    @media (max-width: 768px) {
+      .header__burger {
+        display: inline-block; } }
+  .header__hire a {
+    font-family: "Rubik", sans-serif;
+    font-size: 50rem;
+    line-height: 56rem;
+    font-weight: 700;
+    color: #1f9783;
+    background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; }
+
+.contact {
+  width: 250rem;
+  border-radius: 8rem; }
+  .contact a {
+    color: #f2f2f2; }
+  .contact span {
+    font-family: "Rubik", sans-serif;
+    font-size: 16rem;
+    line-height: 35rem;
+    font-weight: 400;
+    color: #f2f2f2;
+    display: inline-block;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-65%);
+            transform: translateX(-65%);
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; }
+  .contact__nav {
+    font-size: 0; }
+  .contact a {
+    line-height: 35rem;
+    width: 35rem;
+    text-align: center;
+    display: inline-block;
+    background-color: #1f9783;
+    color: #1f9783;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1);
+            box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1); }
+    .contact a:nth-child(1) {
+      border-top-left-radius: 8rem;
+      border-bottom-left-radius: 8rem;
+      margin-left: 0; }
+      .contact a:nth-child(1):hover {
+        background-color: #0e76a8; }
+    .contact a:nth-child(2):hover {
+      background-color: #3B5998; }
+    .contact a:nth-child(3):hover {
+      background: -webkit-gradient(linear, left top, right top, from(#7935d2), color-stop(26%, #f640da), to(#eec736));
+      background: linear-gradient(90deg, #7935d2 0%, #f640da 26%, #eec736 100%); }
+    .contact a:nth-child(4) {
+      border-top-right-radius: 8rem;
+      border-bottom-right-radius: 8rem;
+      margin-right: 0; }
+      .contact a:nth-child(4):hover {
+        background-color: #000000;
+        outline: 0.5rem solid #f2f2f2; }
+  .contact:hover span, .contact.hover span {
+    opacity: 0; }
+  .contact:hover a, .contact.hover a {
+    border-radius: 50%;
+    margin: 0 10rem;
+    color: #f2f2f2;
+    font-size: 16rem; }
+    .contact:hover a:hover, .contact.hover a:hover {
+      color: #f2f2f2; }
+
+.shine, .chrome {
+  font-size: 3em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  font-weight: bold; }
+
+.shine {
+  background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+  -webkit-background-size: 150px;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); }
+
+.chrome {
+  background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  -webkit-background-size: 200px;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); }
+
+@-webkit-keyframes shine {
+  0%, 10% {
+    background-position: -1000px; }
+  20% {
+    background-position: top left; }
+  90% {
+    background-position: top right; }
+  100% {
+    background-position: 1000px; } }
 .main-section__container {
   position: relative;
   display: -webkit-box;
@@ -807,7 +840,7 @@ html._light .desc {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 24rem;
+  gap: 30rem;
   margin-top: 50rem; }
 
 .btn {
