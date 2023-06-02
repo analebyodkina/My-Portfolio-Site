@@ -557,6 +557,70 @@ html._light .personal__img {
 html._light .desc {
   color: #1b1a1a; }
 
+.contact {
+  width: 250rem;
+  border-radius: 8rem; }
+  .contact a {
+    color: #f2f2f2; }
+  .contact span {
+    font-family: "Rubik", sans-serif;
+    font-size: 16rem;
+    line-height: 35rem;
+    font-weight: 400;
+    color: #f2f2f2;
+    display: inline-block;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-65%);
+            transform: translateX(-65%);
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; }
+  .contact__nav {
+    font-size: 0; }
+  .contact a {
+    line-height: 35rem;
+    width: 35rem;
+    text-align: center;
+    display: inline-block;
+    background-color: #1f9783;
+    color: #1f9783;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1);
+            box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1); }
+    .contact a:nth-child(1) {
+      border-top-left-radius: 8rem;
+      border-bottom-left-radius: 8rem;
+      margin-left: 0; }
+      .contact a:nth-child(1):hover {
+        background-color: #0e76a8; }
+    .contact a:nth-child(2):hover {
+      background-color: #3B5998; }
+    .contact a:nth-child(3):hover {
+      background: -webkit-gradient(linear, left top, right top, from(#7935d2), color-stop(26%, #f640da), to(#eec736));
+      background: linear-gradient(90deg, #7935d2 0%, #f640da 26%, #eec736 100%); }
+    .contact a:nth-child(4) {
+      border-top-right-radius: 8rem;
+      border-bottom-right-radius: 8rem;
+      margin-right: 0; }
+      .contact a:nth-child(4):hover {
+        background-color: #000000;
+        outline: 0.5rem solid #f2f2f2; }
+  .contact:hover span, .contact.hover span {
+    opacity: 0; }
+  .contact:hover a, .contact.hover a {
+    border-radius: 50%;
+    margin: 0 8rem;
+    color: #f2f2f2;
+    font-size: 16rem; }
+    .contact:hover a:hover, .contact.hover a:hover {
+      color: #f2f2f2; }
+
 .btnContainer {
   width: 70px;
   height: 30px;
@@ -666,118 +730,35 @@ html._light .desc {
     @media (max-width: 768px) {
       .header__burger {
         display: inline-block; } }
-  .header__hire a {
-    font-family: "Rubik", sans-serif;
-    font-size: 50rem;
-    line-height: 56rem;
-    font-weight: 700;
-    color: #1f9783;
-    background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent; }
 
-.contact {
-  width: 250rem;
-  border-radius: 8rem; }
-  .contact a {
-    color: #f2f2f2; }
-  .contact span {
-    font-family: "Rubik", sans-serif;
-    font-size: 16rem;
-    line-height: 35rem;
-    font-weight: 400;
-    color: #f2f2f2;
-    display: inline-block;
-    text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-65%);
-            transform: translateX(-65%);
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none; }
-  .contact__nav {
-    font-size: 0; }
-  .contact a {
-    line-height: 35rem;
-    width: 35rem;
-    text-align: center;
-    display: inline-block;
-    background-color: #1f9783;
-    color: #1f9783;
-    overflow: hidden;
-    opacity: 1;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1);
-            box-shadow: 3rem 1rem 3rem rgba(0, 0, 0, 0.1); }
-    .contact a:nth-child(1) {
-      border-top-left-radius: 8rem;
-      border-bottom-left-radius: 8rem;
-      margin-left: 0; }
-      .contact a:nth-child(1):hover {
-        background-color: #0e76a8; }
-    .contact a:nth-child(2):hover {
-      background-color: #3B5998; }
-    .contact a:nth-child(3):hover {
-      background: -webkit-gradient(linear, left top, right top, from(#7935d2), color-stop(26%, #f640da), to(#eec736));
-      background: linear-gradient(90deg, #7935d2 0%, #f640da 26%, #eec736 100%); }
-    .contact a:nth-child(4) {
-      border-top-right-radius: 8rem;
-      border-bottom-right-radius: 8rem;
-      margin-right: 0; }
-      .contact a:nth-child(4):hover {
-        background-color: #000000;
-        outline: 0.5rem solid #f2f2f2; }
-  .contact:hover span, .contact.hover span {
-    opacity: 0; }
-  .contact:hover a, .contact.hover a {
-    border-radius: 50%;
-    margin: 0 10rem;
-    color: #f2f2f2;
-    font-size: 16rem; }
-    .contact:hover a:hover, .contact.hover a:hover {
-      color: #f2f2f2; }
-
-.shine, .chrome {
-  font-size: 3em;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  font-weight: bold; }
-
-.shine {
-  background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-  -webkit-background-size: 150px;
-  color: rgba(255, 255, 255, 0.3);
+#background {
+  -webkit-animation: sTransition 10s linear infinite;
+          animation: sTransition 10s linear infinite;
+  background: -webkit-gradient(linear, left top, right top, from(#4cd969), color-stop(#34aadc), color-stop(#5856d9), color-stop(#ff2d53), color-stop(#ff2d53), color-stop(#5856d9), color-stop(#34aadc), to(#4cd969));
+  background: linear-gradient(to right, #4cd969, #34aadc, #5856d9, #ff2d53, #ff2d53, #5856d9, #34aadc, #4cd969);
+  background-size: 400%;
   -webkit-background-clip: text;
-  -webkit-animation-name: shine;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-size: 24rem;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  bottom: 2rem; }
+  #background:after {
+    display: none; }
 
-.chrome {
-  background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-  -webkit-background-size: 200px;
-  color: rgba(255, 255, 255, 0.3);
-  -webkit-background-clip: text;
-  -webkit-animation-name: shine;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); }
-
-@-webkit-keyframes shine {
-  0%, 10% {
-    background-position: -1000px; }
-  20% {
-    background-position: top left; }
-  90% {
-    background-position: top right; }
+@-webkit-keyframes sTransition {
+  0% {
+    background-position: 0%; }
   100% {
-    background-position: 1000px; } }
+    background-position: 400%; } }
+
+@keyframes sTransition {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
 .main-section__container {
   position: relative;
   display: -webkit-box;
