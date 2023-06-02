@@ -1,0 +1,58 @@
+.footer {
+    padding: 20rem 0;
+    background: $bg-add;
+    &__container {
+        @include flex-between;
+    }
+
+    &__copyright {
+    }
+
+    &__nav {
+        position: relative;        
+    }
+
+    &__contact {
+        margin-bottom: 10rem;
+        span {
+            right:-10%;
+            // transform: translateX(-50%);
+        }
+    }
+
+    &__ul {
+        display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40rem;
+        a {
+            @include text($ff, 16rem, 19rem, 400, $color-text);
+            transition: $transition;
+            &:hover {
+              color: $color-primary;
+            }
+            &:after {
+              content: "";
+              background-color: $color-primary;
+              display: block;
+              height: 2px;
+              width: 0%;
+              position: relative;
+              top: 2px;
+              -webkit-transition: width .3s ease-in-out;
+              -moz--transition: width .3s ease-in-out;
+              transition: width .3s ease-in-out;
+            }
+            &:hover:after, &:focus:after {
+              width: 100%;
+            }      
+          }
+    }
+}
+
+.contact {
+
+    &__nav {
+    }
+}
+

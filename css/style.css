@@ -1029,3 +1029,57 @@ html._light .desc {
               box-shadow: 0rem 0rem 10rem #fff; }
     .projects-section__item img {
       border-radius: 8rem; }
+
+.footer {
+  padding: 20rem 0;
+  background: #313231; }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__nav {
+    position: relative; }
+  .footer__contact {
+    margin-bottom: 10rem; }
+    .footer__contact span {
+      right: -10%; }
+  .footer__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 40rem; }
+    .footer__ul a {
+      font-family: "Rubik", sans-serif;
+      font-size: 16rem;
+      line-height: 19rem;
+      font-weight: 400;
+      color: #f2f2f2;
+      -webkit-transition: 0.2s all ease-in-out;
+      transition: 0.2s all ease-in-out; }
+      .footer__ul a:hover {
+        color: #1f9783; }
+      .footer__ul a:after {
+        content: "";
+        background-color: #1f9783;
+        display: block;
+        height: 2px;
+        width: 0%;
+        position: relative;
+        top: 2px;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out; }
+      .footer__ul a:hover:after, .footer__ul a:focus:after {
+        width: 100%; }
