@@ -50,7 +50,7 @@
     gap: 20rem;    
     &__title {        
         align-self: flex-start;
-        margin-bottom: 15rem;
+        margin-bottom: 15rem;        
     }
     &__item {
         padding: 25rem;
@@ -59,7 +59,8 @@
         border-radius: 5rem;
     }
     &__header {
-        @include text($ff, 18rem, 24rem, 700, $color-primary);
+        @include text($ff, 18rem, 24rem, 700, #26B5A1);
+        
         
     }
     &__years {        
