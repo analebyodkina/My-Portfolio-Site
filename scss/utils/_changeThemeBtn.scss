@@ -1,7 +1,7 @@
 .btnContainer {
     width: 70px;
     height: 30px;
-    position: relative;
+    position: relative;   
   }
   
   .btnL {
@@ -11,8 +11,8 @@
     bottom: 0;
     right: 0;
     background: $btn-color;
-    border-radius: 999px;
-    padding: 10px;
+    border-radius: 999rem;
+    padding: 10rem;
     cursor: pointer;
   }
   
@@ -21,6 +21,9 @@
     height: 15px;
     position: relative;
     bottom: 22%;
+    @include tablet-992 {
+      bottom: 0;
+    }
   }
   
   .top {

@@ -31,7 +31,7 @@ $('.owl-carousel').owlCarousel({
     responsive : {
       // breakpoint from 0 up
       0 : {
-          items:1.3,          
+          items:1,          
       },      
       576 : {
           items:2,                 

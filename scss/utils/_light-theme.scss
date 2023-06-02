@@ -44,7 +44,7 @@ html._light  {
     }
     .edu {
         &__item {
-        border: 2rem solid $color-grey;
+        border: 3rem solid $color-grey;
         }
         &__header {
             color: $color-text;
@@ -54,7 +54,8 @@ html._light  {
         }
     }    
     .personal__img {
-        border: 3rem solid $color-text;
+        border: none;
+        background: linear-gradient(180deg, #787672 0%, #515356 100%);
     }
     .projects-section__item {
         background: rgba($color-primary, $alpha: 0.3);
