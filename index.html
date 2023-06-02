@@ -6,7 +6,7 @@
 	<title>My portfolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" as="style">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 	<link rel="stylesheet"  href="css/owl.carousel.css">
 	<link rel="stylesheet"  href="css/owl.theme.default.css">	
@@ -38,9 +38,9 @@
 				<nav class="header__nav">									
 					<ul class="header__ul" id="headerUl">	
 						<li><a href="https://t.me/a_lebjodkina" id="background" target="_blank" onclick="navToggle()">Hire me</a></li>					
-						<li class="header__li"><a href="#home" onclick="navToggle()">Home</a></li>
-						<li class="header__li"><a href="#about" onclick="navToggle()">About</a></li>
-						<li class="header__li"><a href="#projects" onclick="navToggle()">Projects</a></li>						
+						<li class="header__li"><a href="#home" onclick="removeOverflow()">Home</a></li>
+						<li class="header__li"><a href="#about" onclick="removeOverflow()">About</a></li>
+						<li class="header__li"><a href="#projects" onclick="removeOverflow()">Projects</a></li>						
 						<li><span class="material-symbols-outlined header__close" id="close" onclick="navToggle()">close</span></li>
 					</ul>
 				</nav>
@@ -152,16 +152,10 @@
 						<li><a href="https://t.me/a_lebjodkina" target="_blank">Hire me</a></li>					
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
-						<li><a href="#projects">Projects</a></li>						
-						
+						<li><a href="#projects">Projects</a></li>
 					</ul>
-	
 				</div>
-
-
-
 			</div>
-			
 		</footer>
 				
 	</div>
@@ -171,8 +165,8 @@
 	integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
 	crossorigin="anonymous"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	<script src="https://kit.fontawesome.com/54bb11027c.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script defer src="https://kit.fontawesome.com/54bb11027c.js" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
 	<script src="js/script.js"></script>
 	

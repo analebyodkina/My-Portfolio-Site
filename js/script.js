@@ -10,6 +10,12 @@ function navToggle() {
   document.getElementById("html").classList.toggle("overflow-hidden");
   document.getElementById("body").classList.toggle("overflow-hidden");
 }
+function removeOverflow() { 
+  var headerUl = document.getElementById("headerUl");
+  headerUl.classList.remove("active"); 
+  document.getElementById("html").classList.remove("overflow-hidden");
+  document.getElementById("body").classList.remove("overflow-hidden");
+}
 
 // copyright
 var currentYear = new Date().getFullYear();
