@@ -4,7 +4,7 @@ $ff-titles: 'Playfair Display', serif;
 
 // dark theme
 $color-black: #000;
-$color-white: #fff;
+$color-white: #ffffff;
 $color-primary: #1f9783;
 $color-text: #f2f2f2;
 $main-bg: #131215; 
@@ -12,7 +12,8 @@ $bg-add: #313231;
 
 // light theme
 $color-grey: #1b1a1a;
-$bg-light: #cbd4c0;
+$bg-light: #f6f9e4;
+$btn-color: #3c3459;
 
 
 $transition: .2s all ease-in-out;
@@ -23,16 +24,14 @@ $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
 
-
+// socials button
 $backgroundColor: #e5eef3;
-$hoverColor: #fff;
 $facebook: #3B5998;
 $linkedin: #0e76a8;
 $instagram: linear-gradient(90deg, rgba(121,53,210,1) 0%, rgba(246,64,218,1) 26%, rgba(238,199,54,1) 100%);;
-$github: #000000;
 
 
-// header animation
+
 
 
 

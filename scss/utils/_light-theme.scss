@@ -1,14 +1,25 @@
 html._light  {	
 	body {
-		background: $bg-light;
+        background:  url(../img/pxfuel.png) 0 -160rem/ cover no-repeat, $bg-light;		
 	}
-    .header {
-        border-bottom: 2rem solid $color-grey;
+    .header { 
+        &:after {
+            display: none;
+        }       
         &__li a {
             color: $color-grey;
             &:hover {
                 color: $color-primary;
             }
+        }
+        &__burger {
+            color: $color-primary;
+            
+        }
+    }
+    .main-section {
+        &:after {
+            display: none;
         }
     }
     .main-section__title, .main-section__desc {
@@ -16,9 +27,8 @@ html._light  {
     }
     .btn {
         &:hover, 
-        &:active {
-            color: $color-primary;
-            box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+        &:active {            
+            box-shadow: 0rem 5rem 10rem rgba(0,0,0,0.2);
         }
     }
     .about-section {
@@ -46,8 +56,19 @@ html._light  {
     .personal__img {
         border: 3rem solid $color-text;
     }
+    .projects-section__item {
+        background: rgba($color-primary, $alpha: 0.3);
+    }
     .desc {
         color: $color-grey;
+    }
+    .footer {
+        background: $color-primary;
+        &__contact{ 
+            a {
+                background: $btn-color;
+            }            
+        }
     }
 
 

@@ -28,8 +28,10 @@ body {
     font-size: 10rem;   
     height: 100%;    
     margin: 0;
-    overflow-x: hidden;
-    background: $main-bg;
+    overflow-x: hidden;    
+    position: relative;
+    background:  url(../img/pxfuel.png) 0 -180rem/ cover no-repeat, $main-bg;
+    
 }
 .overflow-hidden {
 	overflow-y: hidden;

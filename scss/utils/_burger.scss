@@ -14,7 +14,8 @@
         gap: 40px;
         transform: translateX(-120%);
         transition: $transition;
-        z-index: 99;
+        z-index: 9999;
+        opacity: 1;
     }
     .header__ul.active {
         transform: translateY(0%);

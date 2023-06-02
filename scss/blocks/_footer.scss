@@ -24,8 +24,7 @@
     }
     &__ul {
         display: flex;
-    align-items: center;
-    
+    align-items: center;    
     gap: 20rem;
         a {
             @include text($ff, 14rem, 16rem, 400, $color-text);

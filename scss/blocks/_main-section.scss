@@ -1,9 +1,23 @@
 .main-section {
-    // padding-top: 0;   
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.3);
+        z-index: 2;
+        
+      }
+    
+    
     &__container {        
-        position: relative;        
-        @include flex-between;
-        gap: 30rem;                     
+        position: relative;
+        z-index: 5;        
+        @include flex-center;
+        gap: 80rem;                     
         @include tablet-small-768 {
             flex-direction: column;        
         }
@@ -30,7 +44,7 @@
     &__desc {
         @include text($ff, 18rem, 22rem, 400, $color-text);
     }
-    &__img {        
+    &__img {              
         img {            
         max-width: 520rem;
         border-radius: 8rem;
